@@ -44,9 +44,11 @@ p {
     position: relative; /* Altera a posição para permitir que o conteúdo se ajuste */
     top: 0px; /* Remove o deslocamento absoluto */
     right: 0px; /* Remove o alinhamento à direita */
-    left: 20vh; /* Alinha ao centro */
+    left: 0px; /* Alinha ao centro */
     margin: 10px auto; /* Centraliza horizontalmente e adiciona espaço em volta */
-    display: inline-block; /* Mantém o botão no tamanho natural */ } }
+    display: flex; /* Mantém o botão no tamanho natural */ 
+    justify-content: center;
+    align-items: center;} }
 
 .regras {
   position: fixed;
@@ -211,6 +213,11 @@ p {
   margin-top: 20px;
   justify-items: center;
 }
+
+@media (max-width: 768px) {
+  .teclado {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); } }
 
 .teclado button {
   padding: 0px;
