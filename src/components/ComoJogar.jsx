@@ -19,9 +19,9 @@ const ComoJogar = () => {
             <h2>Regras do Jogo</h2>
             <p>
             Adivinhe a palavra secreta antes que o boneco na forca seja completado. Cada letra correta é revelada, e cada erro desenha uma parte do boneco. 
-            Você tem 5 chances de errar. 
+            Você tem 5 chances de errar. </p>
             <p>Boa sorte e divirta-se! 😃</p>
-            </p>
+            
             <button className="fechar-regras" onClick={handleTogglePopup}>
               Fechar
             </button>
