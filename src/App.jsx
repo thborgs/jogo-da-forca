@@ -99,6 +99,7 @@ function App() {
             {letra.toUpperCase()}
     </button>
   ))}
+ <Notificacao mostrarNotificacao={mostrarNotificacao}/>
 </div>
 
 
@@ -108,7 +109,7 @@ function App() {
         palavraSelecionada={palavraSelecionada} 
         setJogavel={setJogavel}
         jogarNovamente={jogarNovamente}/>
-        <Notificacao mostrarNotificacao={mostrarNotificacao}/>
+        
     </>
   );
 }

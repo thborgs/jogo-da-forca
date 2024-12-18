@@ -14,7 +14,7 @@ const ComoJogar = () => {
       </button>
 
       {isPopupOpen && (
-        <div className="regras">
+        <div className="regras" aria-live="polite">
           <div className="regras-content">
             <h2>Regras do Jogo</h2>
             <p>
@@ -22,7 +22,7 @@ const ComoJogar = () => {
             Você tem 5 chances de errar. </p>
             <p>Boa sorte e divirta-se! 😃</p>
             
-            <button className="fechar-regras" onClick={handleTogglePopup}>
+            <button className="fechar-regras" onClick={handleTogglePopup} aria-label="Fechar regras">
               Fechar
             </button>
           </div>
